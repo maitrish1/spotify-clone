@@ -17,9 +17,12 @@
 }
 .spotifylogo li a{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
-
+/* .spotifylogo li a i{
+    color: white;
+    font-size: 25px;
+} */
 .spotifysupport {
   display: flex;
   width: 50%;
@@ -28,6 +31,7 @@
 }
 .spotifysupport li a{
     color: white;
+    font-size: 14px;
 }
 .spotifysupport li a:hover{
     color: rgb(4, 194, 68);
