@@ -45,13 +45,14 @@
 }
 
 .imgbody{
-    height: 768px;
+    height: 100vh;
     text-align: center;
 }
 .bg{
     background-image: url(./img/spotifyimg33.png);
-    background-attachment: fixed;
-    height: 100%;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat;
 }
 
