@@ -185,6 +185,9 @@
         font-size: 0.8em;
         padding-left: 10%;
     }
+    .spotifybutton{
+        padding: 2.5% 5% 2.5% 5%;
+    }
     .spotify-footer-icon{
         padding-top: 5%;
         width: auto;
@@ -200,6 +203,7 @@
         margin-top: 3em;
         font-size: 1.3em;
     }
+
 }
 @media screen and (max-width: 500px){
     .listening{
@@ -211,6 +215,9 @@
     }
     .millions{
         font-size: 0.9em;
+    }
+    .spotifybutton{
+        padding:  2.5% 5% 2.5% 5%;
     }
 }
 
