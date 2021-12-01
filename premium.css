@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .nav {
+    height: 80px;
+    background-color: black;
+    width: 100vw;
+  }
+  .navlist{
+      height: 100%;
+  }
+  
+  .spotifylogo {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding-left: 7%;
+  }
+  .spotifylogo li a{
+      color: white;
+      font-size: 1.2em;
+  }
+  .hamburger{
+      background-color: transparent;
+      border: 0;
+      color: white;
+      cursor: pointer;
+      display: none;
+  }
+  
+  .spotifysupport {
+    display: flex;
+    width: 50%;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  
+  .spotifysupport li a{
+      color: white;
+      font-size: 0.9em;
+  }
+  .spotifysupport li a:hover{
+      color: rgb(4, 194, 68);
+  }
+  .navlist {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .navlist li {
+    list-style-type: none;
+  }
+  .navlist li a {
+    text-decoration: none;
+  }
+
+  .get-premium{
+      display: flex;
+      background-color: rgb(65, 0, 245);
+      width:100vw;
+      height: 77vh;
+  }
+  .premium-left{
+      width: 60%;
+  }
+  .premium-left-content{
+      /* background-color: brown; */
+      display: flex;
+      flex-direction: column;
+      gap: 2.5em;
+      box-sizing: border-box;
+      width: 80%;
+      height: 60%;
+      margin-top: 5.5em;
+      margin-left: 7em;
+      /* line-height: 3em; */
+      color: white;
+  }
+  
+  .premium-left-content h1{
+      font-size: 2.3em;
+      /* font-weight: 1500; */
+  }
+  .premium-left-content p{
+      font-size: 1.4em;
+  }
+  .premium-buttons button{
+      padding:13px 50px 13px 50px;
+      border-radius: 50px;
+      /* border:none; */
+      font-weight: 750;
+      color:white;
+  }
+  .premium-buttons button:hover{
+      transform: scale(1.1);
+  }
+  .para{
+      font-size: 8px;
+  }
+
+  .premium-right{
+    width: 40%;
+}
+.prism{
+    height:20em;
+    padding: 10%;
+}
+.why-premium{
+    /* background-color:chartreuse; */
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    gap: 3.5em;
+    padding-bottom: 5em;
+}
+.why-premium div h1{
+    padding-top: 2.5em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 1000;
+}
+.options ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.options ul li img{
+    width:9em;
+    padding: 0em 5em 3em 5em; 
+}
+.big-text{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.small-text{
+    padding-top: 1em;
+    font-size: 0.9em;
+}
+
+.premium{
+    height: 150vh;
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(178, 199, 240);
+    width: 100vw;
+}
+.pick-premium{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.55em 0em 2em 0em;
+    gap:1em;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2em;
+   
+}
+.card{
+    width: 20vw; 
+    height: 110vh; 
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    padding: 1em 1em 1em 1em;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+}
+.card-top{
+    display: flex;
+    flex-direction: column;
+    gap:0.6em
+}
+.months-free{
+    color: white;
+    background-color: rgb(65, 0, 245);
+    font-size: 0.8em;
+    width: 7em;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.person{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+.charge{
+    font-size: 0.9em;
+}
+.props{
+    font-size: 0.85em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    left: 2.5em;
+    right: 2em;
+}
+.get-started{
+    /* background-color: yellow; */
+    position: absolute;
+    height: 12em;
+    bottom: 1em;
+    right: 0.7em;
+    left: 0.7em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+.get-started p{
+    font-size: 12px;
+    padding:5px;
+}
+.get-started button{
+    width: 13em;
+    height: 3em;
+    color: white;
+    background-color: black;
+    font-size: 1em;
+    border-radius: 25px;
+    border: none;
+}
+.get-started button:hover{
+    transform: scale(1.08);
+}
+
+.footer{
+    display: flex;
+    height: 70vh;
+    width:100vw;
+    background-color: black;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+.spotify-footer-icon{
+    width: 25%;
+}
+.spotify-footer-icon ul{
+    display: flex;
+    justify-content: center;
+}
+.spotify-footer-icon ul li{
+    color: white;
+    list-style-type: none;
+    font-size: 1.7em;
+    color: white;
+}
+.spotify-footer-icon ul li a{
+    color: white;
+    text-decoration:none;
+}
+
+.footer ul li a:hover{
+    color: rgb(4, 194, 68);
+}
+.footer ul li a i:hover{
+    cursor: pointer;
+    color: rgb(4, 194, 68);
+}
+
+.info{
+    width: 50%;
+    display: flex;
+}
+.info ul li{
+    list-style-type: none;
+    padding: 1em;
+}
+.info ul li a{
+    text-decoration: none;
+    color: white;
+}
+.socials{
+    width: 25%;
+}
+.socials a i{
+    font-size: 2em;
+    color: white;
+    padding: 0.5em;
+}
+.socials a i:hover{
+    color: rgb(3, 219, 75);
+}
