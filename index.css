@@ -6,7 +6,7 @@
 .nav {
   height: 80px;
   background-color: black;
-  width: 100vw;
+  width: 100%;
 }
 .navlist{
     height: 100%;
@@ -47,7 +47,7 @@
 .navlist {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
 }
 .navlist li {
   list-style-type: none;
@@ -58,14 +58,14 @@
 
 .imgbody{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 .bg{
     background-image: url(./img/spotifyimg33.png);
     /* background-attachment: fixed; */
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
 }
 
@@ -101,7 +101,7 @@
 .footer{
     display: flex;
     height: 70vh;
-    width:100vw;
+    width:100%;
     background-color: black;
     justify-content: center;
     align-items: baseline;

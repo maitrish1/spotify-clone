@@ -7,7 +7,7 @@
   .nav {
     height: 80px;
     background-color: black;
-    width: 100vw;
+    width: 100%;
   }
   .navlist{
       height: 100%;
@@ -48,7 +48,7 @@
   .navlist {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
   }
   .navlist li {
     list-style-type: none;
@@ -60,29 +60,30 @@
   .get-premium{
       display: flex;
       background-color: rgb(65, 0, 245);
-      width:100vw;
+      width:100%;
       height: 77vh;
+      align-items: center;
   }
   .premium-left{
+      /* background-color: cadetblue; */
       width: 60%;
   }
   .premium-left-content{
-      /* background-color: brown; */
+      width: 80%;
+      height:max-content;
+      /* background-color: burlywood; */
       display: flex;
       flex-direction: column;
-      gap: 2.5em;
-      box-sizing: border-box;
-      width: 80%;
-      height: 60%;
-      margin-top: 5.5em;
-      margin-left: 7em;
-      /* line-height: 3em; */
+      align-items:flex-start;
       color: white;
+      justify-content: center;
+      gap: 2.5em;
+      padding-left: 10%;
+      padding-right: 10%;
   }
   
   .premium-left-content h1{
       font-size: 2.3em;
-      /* font-weight: 1500; */
   }
   .premium-left-content p{
       font-size: 1.4em;
@@ -90,7 +91,6 @@
   .premium-buttons button{
       padding:13px 50px 13px 50px;
       border-radius: 50px;
-      /* border:none; */
       font-weight: 750;
       color:white;
   }
@@ -102,16 +102,15 @@
   }
 
   .premium-right{
+    
     width: 40%;
 }
 .prism{
     height:20em;
-    padding: 10%;
 }
 .why-premium{
-    /* background-color:chartreuse; */
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     gap: 3.5em;
     padding-bottom: 5em;
@@ -125,7 +124,7 @@
 .options ul{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 .options ul li{
     list-style-type: none;
@@ -133,7 +132,7 @@
 }
 .options ul li img{
     width:9em;
-    padding: 0em 5em 3em 5em; 
+    /* padding: 0em 5em 3em 5em;  */
 }
 .big-text{
     font-size: 1.2em;
@@ -146,10 +145,12 @@
 
 .premium{
     height: 150vh;
+    width: 100%;
     display: flex;
     flex-direction: column; 
-    background-color: rgb(178, 199, 240);
-    width: 100vw;
+    background: #F3904F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .pick-premium{
     display: flex;
@@ -158,6 +159,7 @@
     align-items: center;
     padding: 4.55em 0em 2em 0em;
     gap:1em;
+    color: white;
 }
 
 .cards{
@@ -165,7 +167,6 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2em;
-   
 }
 .card{
     width: 20vw; 
@@ -214,13 +215,13 @@
 .get-started{
     /* background-color: yellow; */
     position: absolute;
-    height: 12em;
-    bottom: 1em;
+    height: 7em;
     right: 0.7em;
     left: 0.7em;
+    bottom: 1em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    justify-content: center;
     align-items: center;
 }
 .get-started p{
@@ -242,12 +243,12 @@
 
 .footer{
     display: flex;
-    height: 70vh;
-    width:100vw;
+    height: 80vh;
+    width:100%;
     background-color: black;
     justify-content: center;
     align-items: baseline;
-    
+    padding-top: 8vh;
 }
 .spotify-footer-icon{
     width: 25%;
@@ -298,3 +299,111 @@
 .socials a i:hover{
     color: rgb(3, 219, 75);
 }
+
+@media screen and (max-width: 800px) {
+    .spotifysupport{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        padding-right: 2em;
+        font-size: 1.5em;
+    }
+    .get-premium{
+       /* background-color: chartreuse; */
+        display: flex;
+        height: 120vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* align-items: center; */
+    }
+    .premium-left{
+        width: 100%;
+    }
+    .premium-right{
+        /* background-color: chartreuse; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .prism{
+        width: 45vw;
+        height: auto;
+    }
+    .premium{
+        height: 340vh;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+}
+    .card{
+        width: 60vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+    }
+    .props{
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        gap:0.7em;
+    }
+    .get-started{
+        position: absolute;
+        bottom: 5px;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        font-size: 0.8em;
+        padding-left: 10%;
+        width: 90vw;
+    }
+    .spotifybutton{
+        padding: 2.5% 5% 2.5% 5%;
+    }
+    .spotify-footer-icon{
+        padding-top: 5%;
+        width: auto;
+        
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+    .socials{
+        display: flex;
+        margin-top: 3em;
+        font-size: 1.3em;
+    }
+}
+
+/* @media screen and (max-width: 400px){
+    .nav{
+        max-width:375px;
+        height: 10vh;
+    }
+    .get-premium{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+     }
+     .premium-left{
+         width: 70vw;
+         
+     }
+    .why-premium{
+        max-width:100vw;
+    }
+}  */
+
+
